@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/normalize.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" action="#" name="new-form">
+        <h2 class="title">Форма бронирования переговорной</h2>
+
+        <div class="tower">Выберите Башню</div>
+        <select class="form__select" name="tower" id="tower">
+          <option value=""></option>
+          <option value="A_Tower">Башня А</option>
+          <option value="B_Tower">Башня Б</option>
+        </select>
+
+        <div class="floor">Выбор этажа</div>
+        <select class="form__select" name="floor" id="floor">
+          <option value=""></option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+        </select>
+
+        <div class="room">Выберите Переговорку</div>
+        <select class="form__select" name="room" id="room">
+          <option value=""></option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+
+        <div class="date">Выбор даты и интервала</div>
+        <input class="form__select" type="text" name="datetimes" />
+
+        <div class="comment">Оставьте комментарий</div>
+        <textarea class="textarea" name="text" id="text" cols="40" rows="5"></textarea>
+
+        <div class="button-container">
+          <button class="button btn__clear">Очистить</button>
+          <button class="button btn__send" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/dates.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
